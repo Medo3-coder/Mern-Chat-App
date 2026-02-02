@@ -136,7 +136,7 @@ export const extractTokenFromHeader = (authHeader) => {
         return null;
     }
     const parts = authHeader.split(' ');
-
+    
     // Validate header format
     if (parts.length !== 2 || parts[0] !== 'Bearer') {
         logger.warn('Invalid Authorization header format', { authHeader });
